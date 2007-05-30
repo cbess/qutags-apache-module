@@ -46,7 +46,7 @@ if ( ($nArgs = scalar(@ARGV)) )
 # if dumping info
 if ( $arg1 =~ /info/ )
 {
-fmeimq	println "dumping QuTag deployment info...";
+	println "dumping QuTag deployment info...";
 	
 	println "apache dir: $apacheDir";
 	println "build dir: $buildDir";
