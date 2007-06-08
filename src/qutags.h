@@ -86,32 +86,32 @@ ZEND_MINFO_FUNCTION( minfo_qutags );
 ZEND_FUNCTION( init_qutags );
 
 // html output functions
-ZEND_FUNCTION( qu_form_start );
-ZEND_FUNCTION( qu_form_end );
-ZEND_FUNCTION( qu_listbox );
-ZEND_FUNCTION( qu_listbox_start );
-ZEND_FUNCTION( qu_listbox_end );
-ZEND_FUNCTION( qu_option );
-ZEND_FUNCTION( qu_textbox );
-ZEND_FUNCTION( qu_textarea );
-ZEND_FUNCTION( qu_textarea_start );
-ZEND_FUNCTION( qu_textarea_end );
-ZEND_FUNCTION( qu_button );
-ZEND_FUNCTION( qu_div );
-ZEND_FUNCTION( qu_div_start );
-ZEND_FUNCTION( qu_div_end );
-ZEND_FUNCTION( qu_hyperlink );
-ZEND_FUNCTION( qu_radiobutton );
-ZEND_FUNCTION( qu_checkbox );
-ZEND_FUNCTION( qu_floating_div_start );
-ZEND_FUNCTION( qu_floating_div_end );
-ZEND_FUNCTION( qu_image );
+ZEND_FUNCTION( quform_start );
+ZEND_FUNCTION( quform_end );
+ZEND_FUNCTION( qulistbox );
+ZEND_FUNCTION( qulistbox_start );
+ZEND_FUNCTION( qulistbox_end );
+ZEND_FUNCTION( quoption );
+ZEND_FUNCTION( qutextbox );
+ZEND_FUNCTION( qutextarea );
+ZEND_FUNCTION( qutextarea_start );
+ZEND_FUNCTION( qutextarea_end );
+ZEND_FUNCTION( qubutton );
+ZEND_FUNCTION( qudiv );
+ZEND_FUNCTION( qudiv_start );
+ZEND_FUNCTION( qudiv_end );
+ZEND_FUNCTION( quhyperlink );
+ZEND_FUNCTION( quradiobutton );
+ZEND_FUNCTION( qucheckbox );
+ZEND_FUNCTION( qufloatingdiv_start );
+ZEND_FUNCTION( qufloatingdiv_end );
+ZEND_FUNCTION( quimage );
 
 // misc funcs
-ZEND_FUNCTION( qu_status );
+ZEND_FUNCTION( qustatus );
 ZEND_FUNCTION( qu_add_option );
 ZEND_FUNCTION( qu_clear_options );
-ZEND_FUNCTION( qu_timer );
+ZEND_FUNCTION( qutimer );
 
 // output helpers
 ZEND_FUNCTION( qu_echo );
@@ -120,7 +120,7 @@ ZEND_FUNCTION( qu_repeat );
 ZEND_FUNCTION( qu_repeat_kv );
 
 // general callback func
-ZEND_FUNCTION( qu_response );
+ZEND_FUNCTION( quresponse );
 
 // callback specific funcs
 ZEND_FUNCTION( send_quvalue );

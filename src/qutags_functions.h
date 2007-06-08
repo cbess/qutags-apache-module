@@ -85,7 +85,7 @@ ZEND_FUNCTION( qu_return )
 	} // end IF
 } // end
 
-ZEND_FUNCTION( qu_response )
+ZEND_FUNCTION( quresponse )
 {
 	INIT_QUTAG_ARGS
 	
@@ -157,7 +157,7 @@ ZEND_FUNCTION( send_jscode )
 	- used to provide manipulation of the ajax status message
 	- users can display there own (by providing an ID or use the default)
 */
-ZEND_FUNCTION( qu_status )
+ZEND_FUNCTION( qustatus )
 {
 	INIT_QUTAG_ARGS
 	
@@ -443,7 +443,7 @@ ZEND_FUNCTION( send_qudisabled )
 * - if the duration is set to 0 (zero) then the timer is cutoff
 */
 #define QU_TIMER "qutimer" // ID associated with QuTimer (client side)
-ZEND_FUNCTION( qu_timer )
+ZEND_FUNCTION( qutimer )
 {
 	int numargs = ZEND_NUM_ARGS();
 		

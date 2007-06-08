@@ -34,12 +34,12 @@ ZEND_MINIT_FUNCTION( minit_qutags )
 	REGISTER_LONG_CONSTANT( "qudisabled", quDISABLED, CONST_PERSISTENT );
 	
 	// EVENTS
-	REGISTER_LONG_CONSTANT( "quclick", quON_CLICK, CONST_PERSISTENT );
-	REGISTER_LONG_CONSTANT( "qumouseout", quON_MOUSE_OUT, CONST_PERSISTENT );
-	REGISTER_LONG_CONSTANT( "qumouseover", quON_MOUSE_OVER, CONST_PERSISTENT );
-	REGISTER_LONG_CONSTANT( "quchange", quON_CHANGE, CONST_PERSISTENT );	
-	REGISTER_LONG_CONSTANT( "qublur", quON_BLUR, CONST_PERSISTENT );
-	REGISTER_LONG_CONSTANT( "qukeyup", quON_KEY_UP, CONST_PERSISTENT );
+	REGISTER_LONG_CONSTANT( "onclick", quON_CLICK, CONST_PERSISTENT );
+	REGISTER_LONG_CONSTANT( "onmouseout", quON_MOUSE_OUT, CONST_PERSISTENT );
+	REGISTER_LONG_CONSTANT( "onmouseover", quON_MOUSE_OVER, CONST_PERSISTENT );
+	REGISTER_LONG_CONSTANT( "onchange", quON_CHANGE, CONST_PERSISTENT );	
+	REGISTER_LONG_CONSTANT( "onblur", quON_BLUR, CONST_PERSISTENT );
+	REGISTER_LONG_CONSTANT( "onkeyup", quON_KEY_UP, CONST_PERSISTENT );
 	
 	//REGISTER_LONG_CONSTANT( "qu", qu, CONST_PERSISTENT );
 	//REGISTER_LONG_CONSTANT( "qu", qu, CONST_PERSISTENT );
@@ -77,7 +77,7 @@ ZEND_MINFO_FUNCTION( minfo_qutags )
 {
 	php_info_print_table_start();
 	php_info_print_table_header(2, "Key", "Value");
-	php_info_print_table_row(2, "Version", "ALPHA");
+	php_info_print_table_row(2, "Version", "BETA");
 	php_info_print_table_row(2, "License", "DEV / UNRELEASED");
 	php_info_print_table_end();
 }

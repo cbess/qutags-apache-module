@@ -39,32 +39,32 @@ static function_entry qutag_functions [ ] =
 	ZEND_FE( init_qutags, NULL )
 	
 	// html output
-	ZEND_FE( qu_form_start, NULL )
-	ZEND_FE( qu_form_end, NULL )
-	ZEND_FE( qu_button, NULL )
-	ZEND_FE( qu_textbox, NULL )
-	ZEND_FE( qu_div, NULL )
-	ZEND_FE( qu_div_start, NULL )
-	ZEND_FE( qu_div_end, NULL )
-	ZEND_FE( qu_listbox, NULL )
-	ZEND_FE( qu_listbox_start, NULL )
-	ZEND_FE( qu_listbox_end, NULL )
-	ZEND_FE( qu_option, NULL )
-	ZEND_FE( qu_textarea, NULL )
-	ZEND_FE( qu_textarea_start, NULL )
-	ZEND_FE( qu_textarea_end, NULL )
-	ZEND_FE( qu_hyperlink, NULL )
-	ZEND_FE( qu_radiobutton, NULL )
-	ZEND_FE( qu_checkbox, NULL )
-	ZEND_FE( qu_floating_div_start, NULL )
-	ZEND_FE( qu_floating_div_end, NULL )
-	ZEND_FE( qu_image, NULL )
+	ZEND_FE( quform_start, NULL )
+	ZEND_FE( quform_end, NULL )
+	ZEND_FE( qubutton, NULL )
+	ZEND_FE( qutextbox, NULL )
+	ZEND_FE( qudiv, NULL )
+	ZEND_FE( qudiv_start, NULL )
+	ZEND_FE( qudiv_end, NULL )
+	ZEND_FE( qulistbox, NULL )
+	ZEND_FE( qulistbox_start, NULL )
+	ZEND_FE( qulistbox_end, NULL )
+	ZEND_FE( quoption, NULL )
+	ZEND_FE( qutextarea, NULL )
+	ZEND_FE( qutextarea_start, NULL )
+	ZEND_FE( qutextarea_end, NULL )
+	ZEND_FE( quhyperlink, NULL )
+	ZEND_FE( quradiobutton, NULL )
+	ZEND_FE( qucheckbox, NULL )
+	ZEND_FE( qufloatingdiv_start, NULL )
+	ZEND_FE( qufloatingdiv_end, NULL )
+	ZEND_FE( quimage, NULL )
 	
 	// misc
-	ZEND_FE( qu_status, NULL )
+	ZEND_FE( qustatus, NULL )
 	ZEND_FE( qu_add_option, NULL )
 	ZEND_FE( qu_clear_options, NULL )
-	ZEND_FE( qu_timer, NULL )
+	ZEND_FE( qutimer, NULL )
 	
 	// output helpers
 	ZEND_FE( qu_echo, NULL )
@@ -73,7 +73,7 @@ static function_entry qutag_functions [ ] =
 	ZEND_FE( qu_repeat_kv, NULL )
 	
 	// general responses
-	ZEND_FE( qu_response, NULL )
+	ZEND_FE( quresponse, NULL )
 	
 	// callback specific responses
 	ZEND_FE( send_quvalue, NULL )
@@ -96,7 +96,7 @@ zend_module_entry qutags_module_entry =
 	ZEND_RINIT(rinit_qutags),
 	ZEND_RSHUTDOWN(rshutdown_qutags),
 	ZEND_MINFO( minfo_qutags ),
-	"0.5", // module version
+	"0.7.1", // module version
 	STANDARD_MODULE_PROPERTIES
 };
 
@@ -214,7 +214,7 @@ PG(http_globals)[TRACK_VARS_GET]
 	{
 		// setup qucomm loc format
 		int nQucommLoc = strlen(qucommLoc);
-		char *qucommf = estrdup("<script src='%squcomm.js'></script>\n BUILD: "__TIME__);
+		char *qucommf = estrdup("<script src='%squcomm.js'></script>");
 		
 		// allocate space
 		char *qucomm = (char*)emalloc(nQucommLoc+strlen(qucommf)+1);

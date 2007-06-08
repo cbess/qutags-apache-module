@@ -26,7 +26,7 @@
 */
 
 // qutags
-QUTAG_FUNCTION( qu_form_start )
+QUTAG_FUNCTION( quform_start )
 {
 		 
 	if ( ZEND_NUM_ARGS() != 0 )
@@ -45,13 +45,13 @@ QUTAG_FUNCTION( qu_form_start )
 	} // end ELSE
 }
 
-QUTAG_FUNCTION( qu_form_end )
+QUTAG_FUNCTION( quform_end )
 {	
 	ECHO_END_TAG( "</form>" );
 }
 
 // it is dropdown if the user selects size of 1
-QUTAG_FUNCTION( qu_listbox )
+QUTAG_FUNCTION( qulistbox )
 {
 	INIT_QUTAG_ARGS
 	
@@ -74,7 +74,7 @@ QUTAG_FUNCTION( qu_listbox )
 	END_CALLBACK
 }
 
-QUTAG_FUNCTION( qu_listbox_start )
+QUTAG_FUNCTION( qulistbox_start )
 {
 	INIT_QUTAG_ARGS
 	
@@ -99,7 +99,7 @@ QUTAG_FUNCTION( qu_listbox_start )
 	END_CALLBACK
 }
 
-QUTAG_FUNCTION( qu_option )
+QUTAG_FUNCTION( quoption )
 {
 	IF_NOT_CALLBACK
 	
@@ -124,12 +124,12 @@ QUTAG_FUNCTION( qu_option )
 	END_CALLBACK
 }
 
-QUTAG_FUNCTION( qu_listbox_end )
+QUTAG_FUNCTION( qulistbox_end )
 {
 	ECHO_END_TAG( "</select>" );
 }
 
-QUTAG_FUNCTION( qu_button )
+QUTAG_FUNCTION( qubutton )
 {
 	// declare var and get parameters
 	INIT_QUTAG_ARGS
@@ -163,7 +163,7 @@ QUTAG_FUNCTION( qu_button )
 
 }
 
-QUTAG_FUNCTION( qu_textbox )
+QUTAG_FUNCTION( qutextbox )
 {
 	// declar and get params
 	INIT_QUTAG_ARGS
@@ -207,7 +207,7 @@ QUTAG_FUNCTION( qu_textbox )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_textarea )
+QUTAG_FUNCTION( qutextarea )
 {
 	INIT_QUTAG_ARGS
 	
@@ -234,7 +234,7 @@ QUTAG_FUNCTION( qu_textarea )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_textarea_start )
+QUTAG_FUNCTION( qutextarea_start )
 {
 	INIT_QUTAG_ARGS
 	
@@ -259,12 +259,12 @@ QUTAG_FUNCTION( qu_textarea_start )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_textarea_end )
+QUTAG_FUNCTION( qutextarea_end )
 {
 	ECHO_END_TAG( "</textarea>" );
 }
 
-QUTAG_FUNCTION( qu_div )
+QUTAG_FUNCTION( qudiv )
 {
 	// declare and get params
 	INIT_QUTAG_ARGS
@@ -288,7 +288,7 @@ QUTAG_FUNCTION( qu_div )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_div_start )
+QUTAG_FUNCTION( qudiv_start )
 {
 	INIT_QUTAG_ARGS
 	
@@ -302,12 +302,12 @@ QUTAG_FUNCTION( qu_div_start )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_div_end )
+QUTAG_FUNCTION( qudiv_end )
 {
 	ECHO_END_TAG( "</div>" );
 }
 
-QUTAG_FUNCTION( qu_hyperlink )
+QUTAG_FUNCTION( quhyperlink )
 {
 	INIT_QUTAG_ARGS
 	
@@ -350,7 +350,7 @@ QUTAG_FUNCTION( qu_hyperlink )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_radiobutton )
+QUTAG_FUNCTION( quradiobutton )
 {
 	INIT_QUTAG_ARGS
 	
@@ -375,7 +375,7 @@ QUTAG_FUNCTION( qu_radiobutton )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_checkbox )
+QUTAG_FUNCTION( qucheckbox )
 {
 	INIT_QUTAG_ARGS
 	
@@ -400,7 +400,7 @@ QUTAG_FUNCTION( qu_checkbox )
 	DTOR(arrVal);
 }
 
-QUTAG_FUNCTION( qu_floating_div_start )
+QUTAG_FUNCTION( qufloatingdiv_start )
 {
 	INIT_QUTAG_ARGS
 	
@@ -435,12 +435,12 @@ QUTAG_FUNCTION( qu_floating_div_start )
 	DTOR(arrVal);
 } // end
 
-QUTAG_FUNCTION( qu_floating_div_end )
+QUTAG_FUNCTION( qufloatingdiv_end )
 {
 	ECHO_END_TAG( "</div></div>" );
 } // end
 
-QUTAG_FUNCTION( qu_image )
+QUTAG_FUNCTION( quimage )
 {
 	INIT_QUTAG_ARGS
 	
